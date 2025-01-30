@@ -1,7 +1,7 @@
-let number1 = 1;
-let number2 = 10;
-let string = '1';
-let boolean = true;
+const number1 = 1;
+const number2 = 10;
+const string = '1';
+const boolean = true;
 
 console.log(`Equality check two numbers values: ${number1 == number2}\n`);
 console.log(`Equality check number and string values: ${number1 == string}\n`);

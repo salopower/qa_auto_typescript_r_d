@@ -1,7 +1,7 @@
-let number1 = 1;
-let number2 = 10;
-let string = '15';
-let boolean = true;
+const number1 = 1;
+const number2 = 10;
+const string = '15';
+const boolean = true;
 
 console.log(`The sum of numbers: ${number1 + number2}\n`);
 console.log(`The difference of numbers: ${number1 - number2}\n`);

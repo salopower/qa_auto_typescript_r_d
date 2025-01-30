@@ -1,11 +1,11 @@
-let student_1 = 100;
-let student_2 = 90;
-let student_3 = 82;
-let student_4 = 75;
-let student_5 = 64;
-let student_6 = 60;
-let student_7 = 35;
-let student_8 = 1;
+const student_1 = 100;
+const student_2 = 90;
+const student_3 = 82;
+const student_4 = 75;
+const student_5 = 64;
+const student_6 = 60;
+const student_7 = 35;
+const student_8 = 1;
 
 function getRating(student_rating) {
     if (student_rating >= 90 && student_rating <= 100) {
