@@ -1,5 +1,5 @@
-const sumNumbersArray = (arr: number[]): number => arr.reduce((acc, curr) => acc + curr);
-const sumStringsArray = (arr: string[]): string => arr.reduce((acc, curr) => acc + curr);
+const sumNumbersArray = (arr: number[]): number => arr.reduce((acc, curr) => acc + curr, 0);
+const sumStringsArray = (arr: string[]): string => arr.reduce((acc, curr) => acc + curr, '');
 
 
 const numberArray   = [1, 2, 3, 4, 5];
