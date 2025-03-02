@@ -2,7 +2,7 @@ import { expect } from 'chai';
 import { Button } from '../../../home_work_9/src/button';
 import { Checkbox } from '../../../home_work_9/src/checkbox';
 import { TextBox } from '../../../home_work_9/src/text-box';
-import { testUIElement, disableElement } from '../../../home_work_9/src/index';
+import { testUIElement, disableElement } from '../../../home_work_9/src';
 
 describe('testUIElement Function', () => {
     it('Should test a Button element', () => {
