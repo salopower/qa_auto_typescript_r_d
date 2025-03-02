@@ -12,17 +12,33 @@ describe('Button Class', () => {
         expect(button.name).toBe('Submit');
     });
 
-    test('Should change the isDisabled', () => {
-        expect(button.isDisabled).toBe(false);
+    test('Should disable the button', () => {
         button.disable();
         expect(button.isDisabled).toBe(true);
+    });
+
+    test('Should enable the button', () => {
+        button.disable();
         button.enable();
         expect(button.isDisabled).toBe(false);
     });
 
     test('Should trigger click event', () => {
+        let clicked = false;
+        button.click = () => {
+            clicked = true;
+        };
         button.click();
+        expect(clicked).toBe(true);
+    });
+
+    test('Should not trigger click event when disabled', () => {
+        let clicked = false;
+        button.click = () => {
+            clicked = true;
+        };
         button.disable();
         button.click();
+        expect(clicked).toBe(false);
     });
 });

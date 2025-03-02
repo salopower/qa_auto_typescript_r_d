@@ -1,7 +1,6 @@
 import { expect } from 'chai';
 import { TextBox } from '../../../home_work_9/src/text-box';
 
-
 describe('TextBox Class', () => {
     let textBox: TextBox;
 
@@ -19,10 +18,9 @@ describe('TextBox Class', () => {
         expect(textBox.getValue()).to.equal(`The 'Search' text field currently contains: '${value}'.`);
     });
 
-    it('Must  get new value', () => {
+    it('Must get new value', () => {
         const value = 'World';
         textBox.setValue(value);
         expect(textBox.getValue()).to.equal(`The 'Search' text field currently contains: '${value}'.`);
     });
 });
-

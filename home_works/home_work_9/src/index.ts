@@ -4,12 +4,12 @@ import { Checkbox } from './checkbox';
 import { UIElement } from './ui-element';
 import { Disableable } from './disableable';
 
-function testUIElement(element: UIElement): void {
+export function testUIElement(element: UIElement): void {
     element.click();
     console.log(element.getValue());
 }
 
-function disableElement(element: Disableable): void {
+export function disableElement(element: Disableable): void {
     element.disable();
 }
 
