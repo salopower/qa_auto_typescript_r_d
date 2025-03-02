@@ -1,7 +1,9 @@
 import { UIElement } from './ui-element';
+import { Disableable } from './disableable';
 
-export class TextBox extends UIElement {
+export class TextBox extends UIElement implements Disableable {
     private value = '';
+    public isDisabled = false;
 
     public constructor(name: string) {
         super(name);
@@ -18,5 +20,15 @@ export class TextBox extends UIElement {
 
     public getValue(): string {
         return `The '${this.name}' text field currently contains: '${this.value}'.`;
+    }
+
+    public disable(): void {
+        this.isDisabled = true;
+        console.log(`The '${this.name}' checkbox has been disabled.`);
+    }
+
+    public enable(): void {
+        this.isDisabled = false;
+        console.log(`The '${this.name}' checkbox has been enabled.`);
     }
 }

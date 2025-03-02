@@ -19,7 +19,7 @@ export class Checkbox extends UIElement implements Disableable{
     }
 
     public getValue(): string {
-        return `The '${this.name}' checkbox is currently ${this.isChecked ? "checked" : "unchecked"}.`;
+        return `The '${this.name}' checkbox is currently ${this.isChecked ? 'checked' : 'unchecked'}.`;
     }
 
     public disable(): void {
