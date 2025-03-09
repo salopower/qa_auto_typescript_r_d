@@ -5,12 +5,13 @@ import { UIElement } from './ui-element';
 import { Disableable } from './disableable';
 
 export function testUIElement(element: UIElement): void {
-    element.click();
-    console.log(element.getValue());
+    return element.click();
 }
 
-export function disableElement(element: Disableable): void {
-    element.disable();
+export function disableElement(element: Disableable): string {
+    const disableMessage = element.disable();
+    const enableMessage = element.enable();
+    return `The element was disabled and then enabled. Disable message: ${disableMessage}, Enable message: ${enableMessage}`;
 }
 
 const loginButton = new Button('Login');

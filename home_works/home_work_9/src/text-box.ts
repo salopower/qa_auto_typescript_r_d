@@ -9,26 +9,26 @@ export class TextBox extends UIElement implements Disableable {
         super(name);
     }
 
-    public click(): void {
-        console.log(`Activated the '${this.name}' text field.`);
+    public click(): string {
+        return `Activated the '${this.name}' text field.`;
     }
 
-    public setValue(value: string): void {
+    public setValue(value: string): string {
         this.value = value;
-        console.log(`Entered '${value}' into the '${this.name}' text field.`);
+        return `Entered '${value}' into the '${this.name}' text field.`;
     }
 
     public getValue(): string {
         return `The '${this.name}' text field currently contains: '${this.value}'.`;
     }
 
-    public disable(): void {
+    public disable(): string {
         this.isDisabled = true;
-        console.log(`The '${this.name}' checkbox has been disabled.`);
+        return `The '${this.name}' text field has been disabled.`;
     }
 
-    public enable(): void {
+    public enable(): string {
         this.isDisabled = false;
-        console.log(`The '${this.name}' checkbox has been enabled.`);
+        return `The '${this.name}' text field has been enabled.`;
     }
 }

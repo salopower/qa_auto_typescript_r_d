@@ -13,32 +13,26 @@ describe('Button Class', () => {
     });
 
     test('Should disable the button', () => {
-        button.disable();
+        const result = button.disable();
         expect(button.isDisabled).toBe(true);
+        expect(result).toBe('The \'Submit\' button has been disabled.');
     });
 
     test('Should enable the button', () => {
         button.disable();
-        button.enable();
+        const result = button.enable();
         expect(button.isDisabled).toBe(false);
+        expect(result).toBe('The \'Submit\' button has been enabled.');
     });
 
     test('Should trigger click event', () => {
-        let clicked = false;
-        button.click = () => {
-            clicked = true;
-        };
-        button.click();
-        expect(clicked).toBe(true);
+        const result = button.click();
+        expect(result).toBe('The \'Submit\' button was clicked.');
     });
 
     test('Should not trigger click event when disabled', () => {
-        let clicked = false;
-        button.click = () => {
-            clicked = true;
-        };
         button.disable();
-        button.click();
-        expect(clicked).toBe(false);
+        const result = button.click();
+        expect(result).toBe('The \'Submit\' button is disabled and cannot be clicked.');
     });
 });

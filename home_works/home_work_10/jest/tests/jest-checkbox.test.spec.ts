@@ -13,45 +13,32 @@ describe('Checkbox Class', () => {
     });
 
     test('Should disable the checkbox', () => {
-        checkbox.disable();
+        const result = checkbox.disable();
         expect(checkbox.isDisabled).toBe(true);
+        expect(result).toBe('The \'Accept Terms\' checkbox has been disabled.');
     });
 
     test('Should enable the checkbox', () => {
         checkbox.disable();
-        checkbox.enable();
+        const result = checkbox.enable();
         expect(checkbox.isDisabled).toBe(false);
+        expect(result).toBe('The \'Accept Terms\' checkbox has been enabled.');
     });
 
     test('Should toggle the checkbox state when clicked', () => {
-        checkbox.click();
+        let result = checkbox.click();
         expect(checkbox.isChecked).toBe(true);
-        checkbox.click();
+        expect(result).toBe('The \'Accept Terms\' checkbox is now checked.');
+
+        result = checkbox.click();
         expect(checkbox.isChecked).toBe(false);
+        expect(result).toBe('The \'Accept Terms\' checkbox is now unchecked.');
     });
 
     test('Should not toggle the checkbox state when disabled', () => {
         checkbox.disable();
-        checkbox.click();
+        const result = checkbox.click();
         expect(checkbox.isChecked).toBe(false);
-    });
-
-    test('Should trigger click event', () => {
-        let clicked = false;
-        checkbox.click = () => {
-            clicked = true;
-        };
-        checkbox.click();
-        expect(clicked).toBe(true);
-    });
-
-    test('Should not trigger click event when disabled', () => {
-        let clicked = false;
-        checkbox.click = () => {
-            clicked = true;
-        };
-        checkbox.disable();
-        checkbox.click();
-        expect(clicked).toBe(false);
+        expect(result).toBe('The \'Accept Terms\' checkbox is disabled and cannot be toggled.');
     });
 });

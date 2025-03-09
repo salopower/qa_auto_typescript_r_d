@@ -14,13 +14,15 @@ describe('TextBox Class', () => {
 
     test('Must set the value', () => {
         const value = 'Hello';
-        textBox.setValue(value);
+        const result = textBox.setValue(value);
         expect(textBox.getValue()).toBe(`The 'Search' text field currently contains: '${value}'.`);
+        expect(result).toBe(`Entered '${value}' into the 'Search' text field.`);
     });
 
     test('Must get new value', () => {
         const value = 'World';
         textBox.setValue(value);
-        expect(textBox.getValue()).toBe(`The 'Search' text field currently contains: '${value}'.`);
+        const result = textBox.getValue();
+        expect(result).toBe(`The 'Search' text field currently contains: '${value}'.`);
     });
 });
