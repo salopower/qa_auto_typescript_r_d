@@ -8,26 +8,25 @@ export class Button extends UIElement implements Disableable {
         super(name);
     }
 
-    public click(): void {
+    public click(): string {
         if (this.isDisabled) {
-            console.log(`The '${this.name}' button is disabled and cannot be clicked.`);
+            return `The '${this.name}' button is disabled and cannot be clicked.`;
         } else {
-            console.log(`Clicked the '${this.name}' button.`);
+            return `The '${this.name}' button was clicked.`;
         }
     }
 
-    public getValue(): string {
-        return `The '${this.name}' button does not store a value.`;
-    }
-
-    public disable(): void {
+    public disable(): string {
         this.isDisabled = true;
-        console.log(`The '${this.name}' button has been disabled.`);
+        return `The '${this.name}' button has been disabled.`;
     }
 
-    public enable(): void {
+    public enable(): string {
         this.isDisabled = false;
-        console.log(`The '${this.name}' button has been enabled.`);
+        return `The '${this.name}' button has been enabled.`;
+    }
+
+    public getValue(): string {
+        return `The '${this.name}' button is currently ${this.isDisabled ? 'disabled' : 'enabled'}.`;
     }
 }
-

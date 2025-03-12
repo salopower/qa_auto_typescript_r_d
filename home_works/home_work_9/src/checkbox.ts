@@ -1,7 +1,7 @@
 import { UIElement } from './ui-element';
 import { Disableable } from './disableable';
 
-export class Checkbox extends UIElement implements Disableable{
+export class Checkbox extends UIElement implements Disableable {
     public isChecked = false;
     public isDisabled = false;
 
@@ -9,26 +9,26 @@ export class Checkbox extends UIElement implements Disableable{
         super(name);
     }
 
-    public click(): void {
+    public click(): string {
         if (this.isDisabled) {
-            console.log(`The '${this.name}' checkbox is disabled and cannot be toggled.`);
+            return `The '${this.name}' checkbox is disabled and cannot be toggled.`;
         } else {
             this.isChecked = !this.isChecked;
-            console.log(`The '${this.name}' checkbox is now ${this.isChecked ? 'checked' : 'unchecked'}.`);
+            return `The '${this.name}' checkbox is now ${this.isChecked ? 'checked' : 'unchecked'}.`;
         }
     }
 
-    public getValue(): string {
-        return `The '${this.name}' checkbox is currently ${this.isChecked ? "checked" : "unchecked"}.`;
-    }
-
-    public disable(): void {
+    public disable(): string {
         this.isDisabled = true;
-        console.log(`The '${this.name}' checkbox has been disabled.`);
+        return `The '${this.name}' checkbox has been disabled.`;
     }
 
-    public enable(): void {
+    public enable(): string {
         this.isDisabled = false;
-        console.log(`The '${this.name}' checkbox has been enabled.`);
+        return `The '${this.name}' checkbox has been enabled.`;
+    }
+
+    public getValue(): string {
+        return `The '${this.name}' checkbox is currently ${this.isChecked ? 'checked' : 'unchecked'}.`;
     }
 }
