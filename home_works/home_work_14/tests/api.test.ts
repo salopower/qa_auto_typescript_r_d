@@ -1,13 +1,7 @@
 import { AxiosError } from 'axios';
 import { describe, it, expect } from 'vitest';
 import { getRandomJoke, getTenJokes, getJokeById } from '../src/api-service';
-
-interface Joke {
-    id: number;
-    type: string;
-    setup: string;
-    punchline: string;
-}
+import { Joke } from '../src/joke';
 
 describe('API Tests', () => {
     it('should fetch a random joke', async () => {
