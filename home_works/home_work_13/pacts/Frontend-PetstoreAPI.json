@@ -4,6 +4,28 @@
   },
   "interactions": [
     {
+      "description": "GET request for pet with ID 1",
+      "providerState": "Pet with ID 1 exists",
+      "request": {
+        "headers": {
+          "Accept": "application/json"
+        },
+        "method": "GET",
+        "path": "/pet/1"
+      },
+      "response": {
+        "body": {
+          "id": 1,
+          "name": "doggie",
+          "status": "available"
+        },
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "status": 200
+      }
+    },
+    {
       "description": "GET request to /pet/1",
       "providerState": "Animal with ID 1 exists",
       "request": {

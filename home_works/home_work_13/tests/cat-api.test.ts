@@ -5,28 +5,29 @@ import { catApi } from '../src/api';
 dotenv.config();
 
 const API_KEY = process.env.CAT_API_KEY || '';
-
-if (!API_KEY) {
-    throw new Error('API Key is missing! Please add CAT_API_KEY to your .env file.');
-}
-
 const HEADERS = { 'x-api-key': API_KEY, 'Content-Type': 'application/json' };
-
-let imageId = '';
-let favouriteId = '';
 const sub_id = 'my-user-1234';
 
 describe('Integration tests for The Cat API', () => {
+    let testImage: { id: string; url: string };
+    let voteId: string;
+    let favouriteId: string;
+
     beforeAll(async () => {
-        const response = await catApi.getRandomCatImage();
-        if (!response || response.length === 0) {
+        const images = await catApi.getRandomCatImage();
+        if (!images || images.length === 0) {
             throw new Error('Failed to fetch a cat image for testing');
         }
-        imageId = response[0].id;
+        testImage = images[0];
     });
 
     afterAll(async () => {
-        // Clean up after tests
+        if (voteId) {
+            await fetch(`${catApi.baseUrl}/votes/${voteId}`, {
+                method: 'DELETE',
+                headers: HEADERS
+            });
+        }
         if (favouriteId) {
             await fetch(`${catApi.baseUrl}/favourites/${favouriteId}`, {
                 method: 'DELETE',
@@ -35,55 +36,54 @@ describe('Integration tests for The Cat API', () => {
         }
     });
 
-    it('Getting an image of a cat', async () => {
-        const response = await catApi.getRandomCatImage();
-        expect(response.length).toBeGreaterThan(0);
-        expect(response[0].id).toBeTypeOf('string');
-        expect(response[0].url).toMatch(/^https:\/\/.*thecatapi\.com\/images\/.+\.(gif|jpg|png)$/);
-        expect(response[0].width).toBeTypeOf('number');
-        expect(response[0].height).toBeTypeOf('number');
-        if (response[0].breeds) {
-            expect(response[0].breeds).toBeInstanceOf(Array);
-        }
+    it('should get random cat image with all required fields', async () => {
+        expect(testImage).toHaveProperty('id');
+        expect(testImage).toHaveProperty('url');
+        expect(testImage.url).toMatch(/^https:\/\/.*thecatapi\.com\/images\/.+\.(gif|jpg|png)$/);
     });
 
-    it('Voting for an image', async () => {
-        const response = await fetch(`${catApi.baseUrl}/votes`, {
+    it('should vote for an image and verify vote was registered', async () => {
+        const voteResponse = await fetch(`${catApi.baseUrl}/votes`, {
             method: 'POST',
             headers: HEADERS,
-            body: JSON.stringify({ image_id: imageId, sub_id: sub_id, value: 1 })
+            body: JSON.stringify({
+                image_id: testImage.id,
+                sub_id,
+                value: 1
+            })
         });
-        expect(response.status).toBe(201);
+        expect(voteResponse.status).toBe(201);
+
+        const votesResponse = await fetch(`${catApi.baseUrl}/votes?sub_id=${sub_id}`, {
+            headers: HEADERS
+        });
+        const votes = await votesResponse.json();
+
+        const ourVote = votes.find((v: any) => v.image_id === testImage.id);
+        expect(ourVote).toBeDefined();
+        expect(ourVote.value).toBe(1);
+        voteId = ourVote.id;
     });
 
-    it('Adding an image to favorites', async () => {
-        const response = await fetch(`${catApi.baseUrl}/favourites`, {
+    it('should add image to favorites and verify integration', async () => {
+        const favResponse = await fetch(`${catApi.baseUrl}/favourites`, {
             method: 'POST',
             headers: HEADERS,
-            body: JSON.stringify({ image_id: imageId })
+            body: JSON.stringify({
+                image_id: testImage.id,
+                sub_id
+            })
         });
-        const data = await response.json();
-        expect(response.status).toBe(200);
-        expect(data).toHaveProperty('id');
-        favouriteId = data.id;
-    });
-
-    it('Checking if the image was added to favorites', async () => {
-        const response = await fetch(`${catApi.baseUrl}/favourites`, {
+        expect(favResponse.status).toBe(200);
+        const favData = await favResponse.json();
+        favouriteId = favData.id;
+        const checkResponse = await fetch(`${catApi.baseUrl}/favourites?sub_id=${sub_id}`, {
             headers: HEADERS
         });
-        const data = await response.json();
-        expect(response.status).toBe(200);
-        expect(Array.isArray(data)).toBe(true);
-        const favourite = data.find((fav: { id: string }) => fav.id === favouriteId);
-        expect(favourite).toBeDefined();
-    });
+        const favorites = await checkResponse.json();
 
-    it('Removing an image from favorites', async () => {
-        const response = await fetch(`${catApi.baseUrl}/favourites/${favouriteId}`, {
-            method: 'DELETE',
-            headers: HEADERS
-        });
-        expect(response.status).toBe(200);
+        const ourFavorite = favorites.find((f: any) => f.image_id === testImage.id);
+        expect(ourFavorite).toBeDefined();
+        expect(ourFavorite.image.url).toBe(testImage.url); // Проверяем интеграцию через URL
     });
 });

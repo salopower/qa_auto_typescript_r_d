@@ -11,14 +11,14 @@ const provider = new Pact({
     logLevel: 'info'
 });
 
-describe('Contract tests for the PetStore API', () => {
+describe('Consumer contract tests for PetStore API', () => {
     beforeAll(() => provider.setup());
     afterAll(() => provider.finalize());
 
-    it('Checking the contract for information about the animal', async () => {
+    it('should correctly handle pet data response', async () => {
         await provider.addInteraction({
-            state: 'Animal with ID 1 exists',
-            uponReceiving: 'GET request to /pet/1',
+            state: 'Pet with ID 1 exists',
+            uponReceiving: 'GET request for pet with ID 1',
             withRequest: {
                 method: 'GET',
                 path: '/pet/1',
@@ -29,7 +29,7 @@ describe('Contract tests for the PetStore API', () => {
                 headers: { 'Content-Type': 'application/json' },
                 body: {
                     id: 1,
-                    name: 'doggie', // Очікувана відповідь
+                    name: 'doggie',
                     status: 'available'
                 }
             }
@@ -38,9 +38,11 @@ describe('Contract tests for the PetStore API', () => {
             headers: { Accept: 'application/json' }
         });
         expect(response.status).toBe(200);
-        expect(response.data.id).toBe(1);
-        expect(response.data.name).toBe('doggie');
-        expect(response.data.status).toBe('available');
+        expect(response.data).toEqual({
+            id: 1,
+            name: 'doggie',
+            status: 'available'
+        });
         await provider.verify();
     });
 });
