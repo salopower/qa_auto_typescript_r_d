@@ -15,9 +15,15 @@
       },
       "response": {
         "body": {
+          "category": {
+            "id": 1,
+            "name": "cat"
+          },
           "id": 1,
-          "name": "doggie",
-          "status": "available"
+          "name": "dog",
+          "photoUrls": [],
+          "status": "sold",
+          "tags": []
         },
         "headers": {
           "Content-Type": "application/json"
