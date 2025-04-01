@@ -25,3 +25,7 @@
 **Home Work 12** - [home_work_12](home_works/home_work_12)
 
 **Home Work 13** - [home_work_13](home_works/home_work_13)
+
+**Home Work 14** - [home_work_14](home_works/home_work_14)
+
+**Home Work 15** - [home_work_15](home_works/home_work_15)

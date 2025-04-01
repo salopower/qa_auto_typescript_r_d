@@ -1,0 +1,279 @@
+{
+	"info": {
+		"_postman_id": "83172f98-9c85-42d0-b5d2-593f9cd6053d",
+		"name": "Official Joke API Tests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42432562"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3005/random_joke",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// Test to check if the response status code is 200\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"// Test to check if the response time is less than the specified maximum time\r",
+							"const maxResponseTime = 500; // Maximum allowed response time\r",
+							"pm.test(`Response time is less than ${maxResponseTime}ms`, function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(maxResponseTime);\r",
+							"});\r",
+							"\r",
+							"// Test to check if the Content-Type header is present\r",
+							"pm.test(\"Content-Type header is present\", function () {\r",
+							"    pm.response.to.have.header('Content-Type');\r",
+							"});\r",
+							"\r",
+							"// Test to check if the response has a valid JSON structure\r",
+							"pm.test(\"Response has valid JSON structure\", function () {\r",
+							"    const jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData).to.be.an('object');\r",
+							"});\r",
+							"\r",
+							"// Test to check if the response contains the required fields: setup and punchline\r",
+							"pm.test(\"Response has joke and punchline\", function () {\r",
+							"    const jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.setup).to.be.a('string');\r",
+							"    pm.expect(jsonData.punchline).to.be.a('string');\r",
+							"});\r",
+							"\r",
+							"// Test to check if the response contains the type field\r",
+							"pm.test(\"Response has type field\", function () {\r",
+							"    const jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.type).to.be.a('string');\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/random_joke",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"random_joke"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3005/jokes/1",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"const randomId = Math.floor(Math.random() * 10) + 1;\r",
+							"\r",
+							"pm.environment.set(\"randomId\", randomId);\r",
+							"\r",
+							"pm.request.url = `http://localhost:3005/jokes/${randomId}`;"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// Retrieve the randomId from the environment variables (if set)\r",
+							"const randomId = pm.environment.get(\"randomId\");\r",
+							"\r",
+							"// Test to check if the response status code is 200\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"// Test to check if the response time is less than the specified maximum time\r",
+							"pm.test(`Response time is less than ${maxResponseTime}ms`, function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(maxResponseTime);\r",
+							"});\r",
+							"\r",
+							"// Test to check if the Content-Type header is present\r",
+							"pm.test(\"Content-Type header is present\", function () {\r",
+							"    pm.response.to.have.header('Content-Type');\r",
+							"});\r",
+							"\r",
+							"// Test to check if the response has a valid JSON structure\r",
+							"pm.test(\"Response has valid JSON structure\", function () {\r",
+							"    const jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData).to.be.an('object');\r",
+							"});\r",
+							"\r",
+							"// Test to check if the response contains the correct ID (if randomId is set)\r",
+							"if (randomId) {\r",
+							"    pm.test(\"Response has correct ID\", function () {\r",
+							"        const jsonData = pm.response.json();\r",
+							"        pm.expect(jsonData.id).to.eql(randomId);\r",
+							"    });\r",
+							"}"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/jokes",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"jokes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3005/random_ten",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// Test to check if the response status code is 200\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"// Test to check if the response time is less than the specified maximum time\r",
+							"pm.test(`Response time is less than ${maxResponseTime}ms`, function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(maxResponseTime);\r",
+							"});\r",
+							"\r",
+							"// Test to check if the Content-Type header is present\r",
+							"pm.test(\"Content-Type header is present\", function () {\r",
+							"    pm.response.to.have.header('Content-Type');\r",
+							"});\r",
+							"\r",
+							"// Test to check if the response has a valid JSON structure\r",
+							"pm.test(\"Response has valid JSON structure\", function () {\r",
+							"    const jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData).to.be.an('array');\r",
+							"});\r",
+							"\r",
+							"// Test to check if the response contains exactly 10 jokes\r",
+							"pm.test(\"Response contains 10 jokes\", function () {\r",
+							"    const jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.length).to.eql(10);\r",
+							"});\r",
+							"\r",
+							"// Test to check if each joke in the response has the required fields\r",
+							"pm.test(\"Each joke has required fields\", function () {\r",
+							"    const jsonData = pm.response.json();\r",
+							"    jsonData.forEach(joke => {\r",
+							"        pm.expect(joke.id).to.be.a('number');\r",
+							"        pm.expect(joke.type).to.be.a('string');\r",
+							"        pm.expect(joke.setup).to.be.a('string');\r",
+							"        pm.expect(joke.punchline).to.be.a('string');\r",
+							"    });\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/random_ten",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"random_ten"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3005/jokes/programming/random",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// Test to check if the response status code is 200\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"// Test to check if the response time is less than the specified maximum time\r",
+							"pm.test(`Response time is less than ${maxResponseTime}ms`, function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(maxResponseTime);\r",
+							"});\r",
+							"\r",
+							"// Test to check if the Content-Type header is present\r",
+							"pm.test(\"Content-Type header is present\", function () {\r",
+							"    pm.response.to.have.header('Content-Type');\r",
+							"});\r",
+							"\r",
+							"// Test to check if the response has a valid JSON structure\r",
+							"pm.test(\"Response has valid JSON structure\", function () {\r",
+							"    const jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData).to.be.an('object');\r",
+							"});\r",
+							"\r",
+							"// Test to check if the response contains the required fields: setup and punchline\r",
+							"pm.test(\"Response has setup and punchline\", function () {\r",
+							"    const jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.setup).to.be.a('string');\r",
+							"    pm.expect(jsonData.punchline).to.be.a('string');\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/jokes/programming/random",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"jokes",
+						"programming",
+						"random"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
