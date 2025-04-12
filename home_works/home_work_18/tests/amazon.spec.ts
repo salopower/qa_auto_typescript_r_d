@@ -1,49 +1,45 @@
 import { test, expect } from '@playwright/test';
-import { AmazonPage } from '../src/pages/amazon.page';
+import { HomePage } from '../src/pages/home-page-amazon.page';
+import { SearchResultsPage } from '../src/pages/search-results.page';
 
 test.describe('Amazon Tests', () => {
-    let amazonPage: AmazonPage;
+    let homePage: HomePage;
+    let searchResultsPage: SearchResultsPage;
 
     test.beforeEach(async ({ page }) => {
-        amazonPage = new AmazonPage(page);
-        await amazonPage.open();
+        homePage = new HomePage(page);
+        await homePage.open();
     });
 
     test('Logo Verification', async () => {
-        await amazonPage.verifyLogo();
+        await homePage.verifyLogo();
     });
 
-    test('Product Search', async () => {
-        await amazonPage.searchForProduct('phone charger');
-        await amazonPage.verifySearchResults();
+    test('Product Search', async ({ page }) => {
+        await homePage.searchForProduct('phone charger');
+        searchResultsPage = new SearchResultsPage(page);
+        await searchResultsPage.verifySearchResults('Charger');
     });
-    //Example of Shadow DOM
+
     test('Shadow DOM Example', async ({ page }) => {
         await page.goto('https://www.amazon.com/gp/video/storefront');
-
         const shadowHost = page.locator('div[data-component-type="dv-web-player"]').first();
-
         const shadowRoot = await shadowHost.evaluateHandle(el => el.shadowRoot);
 
         if (shadowRoot) {
             const shadowElement = await shadowRoot.evaluate((root: ShadowRoot) =>
                 root.querySelector('.player-container')
             );
-
             expect(shadowElement).not.toBeNull();
-
             await expect(page.getByText('Loading video player').first()).toBeVisible();
         } else {
             throw new Error('Shadow root not found');
         }
     });
 
-    //Example of iFrame
     test('iFrame Example', async ({ page }) => {
         await page.goto('https://www.amazon.com/gp/video/storefront');
-
         const iframeElement = page.frameLocator('iframe[name="ape_Detail_hero_iframe"]');
-
         await expect(iframeElement.getByText('Included with Prime')).toBeVisible({
             timeout: 10000
         });
