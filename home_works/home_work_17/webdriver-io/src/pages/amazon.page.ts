@@ -18,11 +18,6 @@ export default class AmazonPage {
         return $$('a.a-link-normal.s-line-clamp-2.s-link-style.a-text-normal span');
     }
 
-    public async open(): Promise<void> {
-        await browser.url('https://www.amazon.com');
-        await browser.maximizeWindow();
-    }
-
     public async verifyLogo(): Promise<void> {
         await expect(this.logo).toBeDisplayed();
         await this.logo.click();

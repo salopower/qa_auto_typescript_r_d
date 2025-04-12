@@ -1,6 +1,12 @@
 import { setOptions } from 'expect-webdriverio';
+import { browser } from '@wdio/globals';
 
 export const config: WebdriverIO.Config = {
+    before: async () => {  // прибрали capabilities і specs
+        await browser.url('https://www.amazon.com');
+        await browser.maximizeWindow();
+        setOptions({ wait: 10000 });
+    },
     //
     // ====================
     // Runner Configuration
@@ -8,7 +14,6 @@ export const config: WebdriverIO.Config = {
     // WebdriverIO supports running e2e tests as well as unit and component tests.
     runner: 'local',
     tsConfigPath: './tsconfig.json',
-
     //
     // ==================
     // Specify Test Files
@@ -143,7 +148,7 @@ export const config: WebdriverIO.Config = {
     mochaOpts: {
         ui: 'bdd',
         timeout: 10000
-    },
+    }
 
     //
     // =====
@@ -198,9 +203,6 @@ export const config: WebdriverIO.Config = {
      * @param {object}         browser      instance of created browser/device session
      */
     /* eslint-disable */
-    before: function (capabilities, specs, browser) {
-        setOptions({ wait: 10000 });
-    }
     /* eslint-enable */
     /**
      * Runs before a WebdriverIO command gets executed.
