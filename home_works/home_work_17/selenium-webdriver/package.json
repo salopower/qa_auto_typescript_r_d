@@ -1,0 +1,40 @@
+{
+  "name": "simple",
+  "version": "1.0.0",
+  "description": "ts simple project",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint src/",
+    "lint:fix": "npm run lint -- --fix",
+    "build": "npm run lint && tsc --build",
+    "test": "npx eslint . && mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^9.23.0",
+    "@stylistic/eslint-plugin": "^3.1.0",
+    "@stylistic/eslint-plugin-ts": "^3.1.0",
+    "@types/chai": "^5.2.1",
+    "@types/expect": "^1.20.4",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^22.14.0",
+    "@types/selenium-webdriver": "^4.1.28",
+    "@typescript-eslint/eslint-plugin": "^8.29.0",
+    "@typescript-eslint/parser": "^8.29.0",
+    "chai": "^5.2.0",
+    "eslint": "^9.23.0",
+    "eslint-plugin-prettier": "^5.2.6",
+    "eslint-plugin-unicorn": "^58.0.0",
+    "esrun": "^0.0.1",
+    "globals": "^15.15.0",
+    "mocha": "^11.1.0",
+    "prettier": "^3.5.3",
+    "selenium-webdriver": "^4.30.0",
+    "ts-mocha": "^11.1.0",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2",
+    "typescript-eslint": "^8.29.0"
+  }
+}
