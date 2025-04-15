@@ -1,4 +1,4 @@
-import { test, expect } from '@playwright/test';
+import { test } from '@playwright/test';
 import { OrangeHRMLoginPage } from '../../../src/pages/orange-hrm-login.page';
 
 test.describe('Login Page UI Elements @smoke', () => {
@@ -9,34 +9,18 @@ test.describe('Login Page UI Elements @smoke', () => {
         await loginPage.goto();
     });
 
-    test('should display company logo', async () => {
-        await expect(loginPage.logo).toBeVisible();
+    test('should display all UI elements correctly', async () => {
+        await loginPage.verifyHeaderSection();
+        await loginPage.verifyCredentialsForm();
+        await loginPage.verifyActionElements();
     });
 
-    test('should display login title with correct text', async () => {
-        await loginPage.verifyLoginTitleVisible();
-        await loginPage.verifyLoginTitleText('Login');
+    //Example of tests that use POM methods for individual checks
+    test('should verify header section', async () => {
+        await loginPage.verifyHeaderSection();
     });
 
-    test('should display username field with correct label and placeholder', async () => {
-        await expect(loginPage.userNameInput).toBeVisible();
-        await expect(loginPage.userNameInputTitle).toHaveText('Username');
-        await expect(loginPage.userNameInput).toHaveAttribute('placeholder', 'Username');
-    });
-
-    test('should display password field with correct label and placeholder', async () => {
-        await expect(loginPage.passwordInput).toBeVisible();
-        await expect(loginPage.passwordInputTitle).toHaveText('Password');
-        await expect(loginPage.passwordInput).toHaveAttribute('placeholder', 'Password');
-    });
-
-    test('should display login button', async () => {
-        await expect(loginPage.loginButton).toBeVisible();
-        await expect(loginPage.loginButton).toHaveText('Login');
-    });
-
-    test('should display forgot password link', async () => {
-        await expect(loginPage.forgotPasswordLink).toBeVisible();
-        await expect(loginPage.forgotPasswordLink).toHaveText('Forgot your password?');
+    test('should verify credentials form', async () => {
+        await loginPage.verifyCredentialsForm();
     });
 });

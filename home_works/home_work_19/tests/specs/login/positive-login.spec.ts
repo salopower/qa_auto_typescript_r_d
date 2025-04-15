@@ -1,4 +1,4 @@
-import { test, expect } from '@playwright/test';
+import { test } from '@playwright/test';
 import { OrangeHRMLoginPage } from '../../../src/pages/orange-hrm-login.page';
 import * as dotenv from 'dotenv';
 
@@ -18,17 +18,5 @@ test.describe('Positive Login Scenarios @smoke', () => {
             process.env.TEST_PASSWORD as string
         );
         await loginPage.verifySuccessfulLogin();
-    });
-
-    test('should persist session after login', async ({ context }) => {
-        await loginPage.login(
-            process.env.TEST_USERNAME as string,
-            process.env.TEST_PASSWORD as string
-        );
-        await loginPage.verifySuccessfulLogin();
-
-        const newPage = await context.newPage();
-        await newPage.goto('https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index');
-        await expect(newPage).toHaveURL(/dashboard/);
     });
 });

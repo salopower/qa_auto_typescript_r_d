@@ -1,7 +1,6 @@
 import { BrowserContext, expect, Locator, Page } from '@playwright/test';
 
 export class OrangeHRMLoginPage {
-    // ========== Locators ==========
     public get logo(): Locator {
         return this.page.locator('img[alt="company-branding"]');
     }
@@ -46,14 +45,11 @@ export class OrangeHRMLoginPage {
         return this.page.locator('i.oxd-alert-content-icon');
     }
 
-    // ========== URL ==========
     private readonly loginUrl = 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login';
     private readonly dashboardUrl = 'https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index';
 
-    // ========== Constructor ==========
     public constructor(public page: Page, private context: BrowserContext) {}
 
-    // ========== General Methods ==========
     public async goto(): Promise<void> {
         await this.page.goto(this.loginUrl);
         await this.loginButton.waitFor();
@@ -65,7 +61,6 @@ export class OrangeHRMLoginPage {
         await this.loginButton.click();
     }
 
-    // ========== Methods for checking the status ==========
     public async verifyLoginTitleVisible(): Promise<void> {
         await expect(this.loginTitle).toBeVisible();
     }
@@ -84,7 +79,6 @@ export class OrangeHRMLoginPage {
         await expect(this.page).toHaveURL(this.dashboardUrl);
     }
 
-    // ========== Methods for working with errors ==========
     public async verifyFailedLogin(): Promise<void> {
         await expect(this.loginError).toBeVisible();
         await expect(this.page).toHaveURL(this.loginUrl);
@@ -100,8 +94,26 @@ export class OrangeHRMLoginPage {
         await expect(this.loginErrorMessageText).toContainText(expectedMessage);
     }
 
-    // ========== Additional actions ==========
     public async clickForgotPassword(): Promise<void> {
         await this.forgotPasswordLink.click();
+    }
+
+    public async verifyHeaderSection(): Promise<void> {
+        await expect(this.logo).toBeVisible();
+        await this.verifyLoginTitleVisible();
+        await this.verifyLoginTitleText('Login');
+    }
+
+    public async verifyCredentialsForm(): Promise<void> {
+        await this.verifyInputPlaceholders();
+        await expect(this.userNameInputTitle).toHaveText('Username');
+        await expect(this.passwordInputTitle).toHaveText('Password');
+    }
+
+    public async verifyActionElements(): Promise<void> {
+        await expect(this.loginButton).toBeVisible();
+        await expect(this.loginButton).toHaveText('Login');
+        await expect(this.forgotPasswordLink).toBeVisible();
+        await expect(this.forgotPasswordLink).toHaveText('Forgot your password?');
     }
 }

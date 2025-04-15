@@ -1,5 +1,8 @@
 import { test } from '@playwright/test';
 import { OrangeHRMLoginPage } from '../../../src/pages/orange-hrm-login.page';
+import * as dotenv from 'dotenv';
+
+dotenv.config();
 
 test.describe('Negative Login Scenarios @smoke', () => {
     let loginPage: OrangeHRMLoginPage;
@@ -9,31 +12,28 @@ test.describe('Negative Login Scenarios @smoke', () => {
         await loginPage.goto();
     });
 
-    test('should show error with wrong password', async () => {
-        await loginPage.login(
-            process.env.TEST_USERNAME as string,
-            'wrongpassword'
-        );
-        await loginPage.verifyFailedLogin();
-        await loginPage.verifyFailedLoginIcon();
-        await loginPage.verifyFailedLoginWithMessage('Invalid credentials');
-    });
-
-    test('should show error with wrong username', async () => {
-        await loginPage.login(
-            'WrongUser',
-            process.env.TEST_PASSWORD as string
-        );
-        await loginPage.verifyFailedLogin();
-        await loginPage.verifyFailedLoginWithMessage('Invalid credentials');
-    });
-
-    test('should show error with special characters in username', async () => {
-        await loginPage.login(
-            process.env.TEST_USERNAME as string + '!@#',
-            process.env.TEST_PASSWORD as string
-        );
-        await loginPage.verifyFailedLogin();
-        await loginPage.verifyFailedLoginWithMessage('Invalid credentials');
+    [
+        {
+            scenario: 'wrong password',
+            username: process.env.TEST_USERNAME as string,
+            password: 'wrongpassword'
+        },
+        {
+            scenario: 'wrong username',
+            username: 'WrongUser',
+            password: process.env.TEST_PASSWORD as string
+        },
+        {
+            scenario: 'special characters in username',
+            username: process.env.TEST_USERNAME + '!@#',
+            password: process.env.TEST_PASSWORD as string
+        }
+    ].forEach(({ scenario, username, password }) => {
+        test(`should show error with ${scenario}`, async () => {
+            await loginPage.login(username, password);
+            await loginPage.verifyFailedLogin();
+            await loginPage.verifyFailedLoginIcon();
+            await loginPage.verifyFailedLoginWithMessage('Invalid credentials');
+        });
     });
 });
