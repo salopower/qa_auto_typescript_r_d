@@ -2,7 +2,8 @@ import { setOptions } from 'expect-webdriverio';
 import { browser } from '@wdio/globals';
 
 export const config: WebdriverIO.Config = {
-    before: async () => {  // прибрали capabilities і specs
+    before: async () => {
+        // прибрали capabilities і specs
         await browser.url('https://www.amazon.com');
         await browser.maximizeWindow();
         setOptions({ wait: 10000 });
@@ -56,21 +57,23 @@ export const config: WebdriverIO.Config = {
     // Sauce Labs platform configurator - a great tool to configure your capabilities:
     // https://saucelabs.com/platform/platform-configurator
     //
-    capabilities: [{
-        browserName: 'chrome',
-        'goog:chromeOptions': {
-            args: [
-                '--disable-blink-features=AutomationControlled',
-                '--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
-                '--disable-infobars',
-                '--start-maximized',
-                '--disable-extensions',
-                '--window-size=1920,1080'
-                // '--headless=new'
-            ],
-            excludeSwitches: ['enable-automation']
+    capabilities: [
+        {
+            browserName: 'chrome',
+            'goog:chromeOptions': {
+                args: [
+                    '--disable-blink-features=AutomationControlled',
+                    '--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
+                    '--disable-infobars',
+                    '--start-maximized',
+                    '--disable-extensions',
+                    '--window-size=1920,1080'
+                    // '--headless=new'
+                ],
+                excludeSwitches: ['enable-automation']
+            }
         }
-    }],
+    ],
 
     //
     // ===================
@@ -141,7 +144,17 @@ export const config: WebdriverIO.Config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter
-    reporters: ['spec'],
+    reporters: [
+        'spec',
+        [
+            'allure',
+            {
+                outputDir: './allure-results',
+                disableWebdriverStepsReporting: false,
+                disableWebdriverScreenshotsReporting: false
+            }
+        ]
+    ],
 
     // Options to be passed to Mocha.
     // See the full list at http://mochajs.org/

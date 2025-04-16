@@ -1,0 +1,30 @@
+userName: andrewkozachok_PhDRvr
+accessKey: 3xqTn5p7RosWrUiEke37
+platforms:
+  - os: Windows
+    osVersion: 10
+    browserName: Chrome
+    browserVersion: latest
+#  - os: OS X
+#    osVersion: Monterey
+#    browserName: Safari
+#    browserVersion: 15.6
+#  - deviceName: iPhone 13
+#    osVersion: 15
+#    browserName: Chromium
+#    deviceOrientation: portrait
+
+parallelsPerPlatform: 1
+browserstackLocal: true
+buildName: selenium-webdriver
+buildIdentifier: ${BUILD_NUMBER}
+projectName: BrowserStack Sample
+testObservability: true
+debug: true
+networkLogs: true
+consoleLogs: info
+percy: false
+percyCaptureMode: auto
+
+run_settings:
+  disableWmic: true
