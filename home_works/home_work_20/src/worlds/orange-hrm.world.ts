@@ -22,13 +22,6 @@ export class OrangeHrmWorld extends World {
         return OrangeHrmWorld.globalContext;
     }
 
-    public get basePage(): BasePage {
-        if (!this._basePage) {
-            this._basePage = new BasePage(this.page, this.context);
-        }
-        return this._basePage;
-    }
-
     public get loginPage(): OrangeHRMLoginPage {
         if (!this._loginPage) {
             this._loginPage = new OrangeHRMLoginPage(this.page, this.context);
@@ -41,3 +34,4 @@ export class OrangeHrmWorld extends World {
         this.scenarioContext = new Map<string, unknown>();
     }
 }
+
