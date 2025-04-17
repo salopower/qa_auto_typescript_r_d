@@ -2,11 +2,9 @@ import { BrowserContext, Locator, Page } from 'playwright';
 import { expect } from '@playwright/test';
 
 export class BasePage {
-    // ========== URL ==========
     protected readonly loginUrl = 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login';
     protected readonly dashboardUrl = 'https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index';
 
-    // ========== Locators ==========
     public get userTab(): Locator {
         return this.page.locator('//span[@class="oxd-userdropdown-tab"]');
     }
@@ -27,10 +25,9 @@ export class BasePage {
         return this.page.locator('//a[@class="oxd-userdropdown-link" and text()=\'Logout\']');
     }
 
-    // ========== Constructor ==========
     public constructor(public page: Page, private context: BrowserContext) {}
 
-    // ========== General Methods ==========
+
     public async logout(): Promise<void> {
         await this.userTab.click();
         await this.logOutButton.click();

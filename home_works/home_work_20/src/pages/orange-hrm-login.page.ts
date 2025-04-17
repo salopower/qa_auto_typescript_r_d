@@ -3,7 +3,6 @@ import { expect } from '@playwright/test';
 import { BasePage } from './base.page.ts';
 
 export class OrangeHRMLoginPage extends BasePage {
-    // ========== Locators ==========
     public get logo(): Locator {
         return this.page.locator('img[alt="company-branding"]');
     }
@@ -48,12 +47,10 @@ export class OrangeHRMLoginPage extends BasePage {
         return this.page.locator('i.oxd-alert-content-icon');
     }
 
-    // ========== Constructor ==========
     public constructor(page: Page, context: BrowserContext) {
         super(page, context);
     }
 
-    // ========== General Methods ==========
     public async goto(): Promise<void> {
         await this.page.goto(this.loginUrl);
         await this.loginButton.waitFor();
@@ -65,7 +62,6 @@ export class OrangeHRMLoginPage extends BasePage {
         await this.loginButton.click();
     }
 
-    // ========== Methods for checking the status ==========
     public async verifyLoginTitleVisible(): Promise<void> {
         await expect(this.loginTitle).toBeVisible();
     }
@@ -84,7 +80,6 @@ export class OrangeHRMLoginPage extends BasePage {
         await expect(this.page).toHaveURL(this.dashboardUrl);
     }
 
-    // ========== Methods for working with errors ==========
     public async verifyFailedLogin(): Promise<void> {
         await expect(this.loginError).toBeVisible();
         await expect(this.page).toHaveURL(this.loginUrl);
@@ -100,7 +95,6 @@ export class OrangeHRMLoginPage extends BasePage {
         await expect(this.loginErrorMessageText).toContainText(expectedMessage);
     }
 
-    // ========== Additional actions ==========
     public async clickForgotPassword(): Promise<void> {
         await this.forgotPasswordLink.click();
     }
