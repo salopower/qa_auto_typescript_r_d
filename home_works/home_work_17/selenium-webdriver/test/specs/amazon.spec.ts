@@ -11,18 +11,18 @@ describe ('Amazon Product Search', () => {
         amazonPage = new AmazonPage(driver);
     });
 
-    beforeEach(async () => {
-        await amazonPage.open();
-        await amazonPage.loadCookies();
-    });
+    // beforeEach(async () => {
+    //     await amazonPage.open();
+    //     await amazonPage.loadCookies();
+    // });
 
     after(async () => {
         await closeBrowserInstance(driver);
     });
 
-    afterEach(async () => {
-        await amazonPage.saveCookies();
-    });
+    // afterEach(async () => {
+    //     await amazonPage.saveCookies();
+    // });
 
     describe('Logo Verification', () => {
         it('should verify logo is visible and clickable', async () => {

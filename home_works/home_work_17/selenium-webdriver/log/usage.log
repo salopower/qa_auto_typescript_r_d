@@ -1,0 +1,369 @@
+2025-04-15 18:06:21 - [32minfo[39m: Creating configuration file...
+2025-04-15 18:06:21 - [32minfo[39m: Adding new script(s) in package.json...
+2025-04-15 18:06:21 - [32minfo[39m: Setup completed
+2025-04-15 18:27:24 - [32minfo[39m: Running SDK with args C:\Program Files\nodejs\node.exe E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\node_modules\browserstack-node-sdk\src\bin\runner.js mocha
+2025-04-15 18:27:24 - [32minfo[39m: Reading configs from E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\browserstack.yml
+2025-04-15 18:27:24 - [32minfo[39m: SDK run started with id: 5532f6cb-afce-4553-a8d6-e9f96a3363c9
+2025-04-15 19:14:21 - [32minfo[39m: Running SDK with args C:\Program Files\nodejs\node.exe E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\node_modules\browserstack-node-sdk\src\bin\runner.js mocha
+2025-04-15 19:14:21 - [32minfo[39m: Reading configs from E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\browserstack.yml
+2025-04-15 19:14:21 - [32minfo[39m: SDK run started with id: 94ac73e0-382c-4e95-a320-15cc74020f85
+2025-04-15 19:31:54 - [32minfo[39m: Running SDK with args C:\Program Files\nodejs\node.exe E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\node_modules\browserstack-node-sdk\src\bin\runner.js mocha
+2025-04-15 19:31:54 - [32minfo[39m: Reading configs from E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\browserstack.yml
+2025-04-15 19:31:54 - [32minfo[39m: SDK run started with id: 6116d69c-4de2-4032-8960-32921ca78f8b
+2025-04-15 19:56:47 - [32minfo[39m: Running SDK with args C:\Program Files\nodejs\node.exe E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\node_modules\browserstack-node-sdk\src\bin\runner.js mocha ./tests/*.ts
+2025-04-15 19:56:47 - [32minfo[39m: Reading configs from E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\browserstack.yml
+2025-04-15 19:56:47 - [32minfo[39m: SDK run started with id: bf696387-f48b-4dc5-b7c8-f98b43057942
+2025-04-15 20:23:45 - [32minfo[39m: Running SDK with args C:\Program Files\nodejs\node.exe E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\node_modules\browserstack-node-sdk\src\bin\runner.js mocha
+2025-04-15 20:23:45 - [32minfo[39m: Reading configs from E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\browserstack.yml
+2025-04-15 20:23:45 - [32minfo[39m: SDK run started with id: 1a1e8d7b-c3dc-4dd9-a024-e98474445752
+2025-04-15 20:29:07 - [32minfo[39m: Running SDK with args C:\Program Files\nodejs\node.exe E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\node_modules\browserstack-node-sdk\src\bin\runner.js mocha test/**/*.spec.ts
+2025-04-15 20:29:07 - [32minfo[39m: Reading configs from E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\browserstack.yml
+2025-04-15 20:29:07 - [32minfo[39m: SDK run started with id: 77d3a39f-0e52-4443-9f83-3acd11c73a02
+2025-04-15 20:29:07 - [32minfo[39m: Running your mocha tests
+2025-04-15 20:29:07 - [32minfo[39m: Now, showing logs from mocha
+2025-04-15 20:29:08 - [32minfo[39m: Testhub started with id: 7asaibb8n1o4dvgq1mtv27wx5ntl8zhtichvynpj
+2025-04-15 20:29:09 - [32minfo[39m: Visit https://observability.browserstack.com/builds/7asaibb8n1o4dvgq1mtv27wx5ntl8zhtichvynpj to view build report, insights, and many more debugging information all at one place!
+
+2025-04-16 10:42:22 - [32minfo[39m: Running SDK with args C:\Program Files\nodejs\node.exe E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\node_modules\browserstack-node-sdk\src\bin\runner.js mocha test/**/*.spec.ts
+2025-04-16 10:42:22 - [32minfo[39m: Reading configs from E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\browserstack.yml
+2025-04-16 10:42:22 - [32minfo[39m: SDK run started with id: 65cd2f2b-faeb-4ca8-8c0c-ac25c799a5e4
+2025-04-16 10:43:56 - [32minfo[39m: Running SDK with args C:\Program Files\nodejs\node.exe E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\node_modules\browserstack-node-sdk\src\bin\runner.js mocha test/**/*.spec.ts
+2025-04-16 10:43:56 - [32minfo[39m: Reading configs from E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\browserstack.yml
+2025-04-16 10:43:56 - [32minfo[39m: SDK run started with id: 360c4468-a85a-4a0a-8967-71712753d7e4
+2025-04-16 10:44:27 - [32minfo[39m: Running SDK with args C:\Program Files\nodejs\node.exe E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\node_modules\browserstack-node-sdk\src\bin\runner.js mocha tests/**/*.spec.ts
+2025-04-16 10:44:27 - [32minfo[39m: Reading configs from E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\browserstack.yml
+2025-04-16 10:44:27 - [32minfo[39m: SDK run started with id: dd5e8fab-b5f1-493d-a68e-c8736af511bd
+2025-04-16 10:44:28 - [32minfo[39m: Running your mocha tests
+2025-04-16 10:44:28 - [32minfo[39m: Now, showing logs from mocha
+2025-04-16 10:44:28 - [32minfo[39m: Testhub started with id: cdkwkichd9qaanhitic465odsqnevcr4ej3js7dc
+2025-04-16 10:44:30 - [32minfo[39m: Visit https://observability.browserstack.com/builds/cdkwkichd9qaanhitic465odsqnevcr4ej3js7dc to view build report, insights, and many more debugging information all at one place!
+
+2025-04-16 10:49:31 - [32minfo[39m: Running SDK with args C:\Program Files\nodejs\node.exe E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\node_modules\browserstack-node-sdk\src\bin\runner.js mocha --loader ts-node/esm tests/**/*.spec.ts
+2025-04-16 10:49:31 - [32minfo[39m: Reading configs from E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\browserstack.yml
+2025-04-16 10:49:31 - [32minfo[39m: SDK run started with id: 690bb935-93ea-48a4-8b74-d126edc65d3f
+2025-04-16 10:49:31 - [32minfo[39m: Running your mocha tests
+2025-04-16 10:49:31 - [32minfo[39m: Now, showing logs from mocha
+2025-04-16 10:49:32 - [32minfo[39m: Testhub started with id: 3dc9kxxucu6dpniujhvrprsokrsja0oxc74kgdvv
+2025-04-16 10:49:33 - [32minfo[39m: Visit https://observability.browserstack.com/builds/3dc9kxxucu6dpniujhvrprsokrsja0oxc74kgdvv to view build report, insights, and many more debugging information all at one place!
+
+2025-04-16 10:50:38 - [32minfo[39m: Running SDK with args C:\Program Files\nodejs\node.exe E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\node_modules\browserstack-node-sdk\src\bin\runner.js mocha tests/**/*.spec.ts
+2025-04-16 10:50:38 - [32minfo[39m: Reading configs from E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\browserstack.yml
+2025-04-16 10:50:38 - [32minfo[39m: SDK run started with id: 5a376ed8-273a-4b7a-9346-bcceb030d26d
+2025-04-16 10:50:39 - [32minfo[39m: Running your mocha tests
+2025-04-16 10:50:39 - [32minfo[39m: Now, showing logs from mocha
+2025-04-16 10:50:39 - [32minfo[39m: Testhub started with id: sdkhmcmb4kmhldhuq2n1tigk9ahu9jhrj4ofu2mh
+2025-04-16 10:50:41 - [32minfo[39m: Visit https://observability.browserstack.com/builds/sdkhmcmb4kmhldhuq2n1tigk9ahu9jhrj4ofu2mh to view build report, insights, and many more debugging information all at one place!
+
+2025-04-16 10:58:18 - [32minfo[39m: Running SDK with args C:\Program Files\nodejs\node.exe E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\node_modules\browserstack-node-sdk\src\bin\runner.js mocha -r ts-node/register tests/**/*.spec.ts
+2025-04-16 10:58:18 - [32minfo[39m: Reading configs from E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\browserstack.yml
+2025-04-16 10:58:18 - [32minfo[39m: SDK run started with id: 4e71a926-47b9-414c-b96c-01440baa48e5
+2025-04-16 10:58:18 - [32minfo[39m: Running your mocha tests
+2025-04-16 10:58:18 - [32minfo[39m: Now, showing logs from mocha
+2025-04-16 10:58:19 - [32minfo[39m: Testhub started with id: kcl03kuuncii5xlzre9qpgixwnrxhlig2mvbz5jt
+2025-04-16 10:58:20 - [32minfo[39m: Visit https://observability.browserstack.com/builds/kcl03kuuncii5xlzre9qpgixwnrxhlig2mvbz5jt to view build report, insights, and many more debugging information all at one place!
+
+2025-04-16 10:59:31 - [32minfo[39m: Running SDK with args C:\Program Files\nodejs\node.exe E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\node_modules\browserstack-node-sdk\src\bin\runner.js mocha
+2025-04-16 10:59:31 - [32minfo[39m: Reading configs from E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\browserstack.yml
+2025-04-16 10:59:31 - [32minfo[39m: SDK run started with id: a33bad95-3805-4519-a301-ca3505b8f1b9
+2025-04-16 11:01:09 - [32minfo[39m: Running SDK with args C:\Program Files\nodejs\node.exe E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\node_modules\browserstack-node-sdk\src\bin\runner.js mocha -r ts-node/register tests/**/*.spec.ts
+2025-04-16 11:01:09 - [32minfo[39m: Reading configs from E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\browserstack.yml
+2025-04-16 11:01:09 - [32minfo[39m: SDK run started with id: 22249dd9-9824-40ea-8e18-e00bba4c128d
+2025-04-16 11:01:10 - [32minfo[39m: Running your mocha tests
+2025-04-16 11:01:10 - [32minfo[39m: Now, showing logs from mocha
+2025-04-16 11:01:10 - [32minfo[39m: Testhub started with id: uazdpod5gncg0jcmu0ux528swva43y4ciqvbcosg
+2025-04-16 11:01:11 - [32minfo[39m: Visit https://observability.browserstack.com/builds/uazdpod5gncg0jcmu0ux528swva43y4ciqvbcosg to view build report, insights, and many more debugging information all at one place!
+
+2025-04-16 11:01:44 - [32minfo[39m: Running SDK with args C:\Program Files\nodejs\node.exe E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\node_modules\browserstack-node-sdk\src\bin\runner.js mocha
+2025-04-16 11:01:44 - [32minfo[39m: Reading configs from E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\browserstack.yml
+2025-04-16 11:01:44 - [32minfo[39m: SDK run started with id: 65113757-6b16-47e1-a5ef-39723e0020ef
+2025-04-16 11:01:54 - [32minfo[39m: Running SDK with args C:\Program Files\nodejs\node.exe E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\node_modules\browserstack-node-sdk\src\bin\runner.js mocha -r ts-node/register tests/**/*.spec.ts
+2025-04-16 11:01:54 - [32minfo[39m: Reading configs from E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\browserstack.yml
+2025-04-16 11:01:54 - [32minfo[39m: SDK run started with id: 9fdd02ee-85af-471c-a0fd-4a0057e04300
+2025-04-16 11:01:54 - [32minfo[39m: Running your mocha tests
+2025-04-16 11:01:54 - [32minfo[39m: Now, showing logs from mocha
+2025-04-16 11:01:54 - [32minfo[39m: Testhub started with id: ifmy4soe4jnjkdddrnebxqlfckhrayjefy734r7r
+2025-04-16 11:01:56 - [32minfo[39m: Visit https://observability.browserstack.com/builds/ifmy4soe4jnjkdddrnebxqlfckhrayjefy734r7r to view build report, insights, and many more debugging information all at one place!
+
+2025-04-16 11:10:51 - [32minfo[39m: Running SDK with args C:\Program Files\nodejs\node.exe E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\node_modules\browserstack-node-sdk\src\bin\runner.js mocha
+2025-04-16 11:10:51 - [32minfo[39m: Reading configs from E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\browserstack.yml
+2025-04-16 11:10:51 - [32minfo[39m: SDK run started with id: 6250be65-06de-41b3-9863-8499712e5e13
+2025-04-16 11:12:34 - [32minfo[39m: Running SDK with args C:\Program Files\nodejs\node.exe E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\node_modules\browserstack-node-sdk\src\bin\runner.js mocha -r ts-node/register tests/**/*.spec.ts
+2025-04-16 11:12:34 - [32minfo[39m: Reading configs from E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\browserstack.yml
+2025-04-16 11:12:34 - [32minfo[39m: SDK run started with id: 296aa5ba-6e48-4541-99c1-5bf3a84ea421
+2025-04-16 11:12:34 - [32minfo[39m: Running your mocha tests
+2025-04-16 11:12:34 - [32minfo[39m: Now, showing logs from mocha
+2025-04-16 11:12:35 - [32minfo[39m: Testhub started with id: 4azm8rijlwiyqe6cmqbrt584qlg0izqvgqdhaqnf
+2025-04-16 11:12:36 - [32minfo[39m: Visit https://observability.browserstack.com/builds/4azm8rijlwiyqe6cmqbrt584qlg0izqvgqdhaqnf to view build report, insights, and many more debugging information all at one place!
+
+2025-04-16 11:13:53 - [32minfo[39m: Running SDK with args C:\Program Files\nodejs\node.exe E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\node_modules\browserstack-node-sdk\src\bin\runner.js mocha
+2025-04-16 11:13:53 - [32minfo[39m: Reading configs from E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\browserstack.yml
+2025-04-16 11:13:53 - [32minfo[39m: SDK run started with id: 45f22d59-4b0d-43ee-b7a6-3c905b14a23c
+2025-04-16 11:18:38 - [32minfo[39m: Creating configuration file...
+2025-04-16 11:18:38 - [32minfo[39m: Adding new script(s) in package.json...
+2025-04-16 11:18:38 - [32minfo[39m: Setup completed
+2025-04-16 11:20:31 - [32minfo[39m: Running SDK with args C:\Program Files\nodejs\node.exe E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\node_modules\browserstack-node-sdk\src\bin\runner.js mocha
+2025-04-16 11:20:31 - [32minfo[39m: Reading configs from E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\browserstack.yml
+2025-04-16 11:20:31 - [32minfo[39m: SDK run started with id: 7e2a27bf-df42-41ab-b1fc-c13849ae0529
+2025-04-16 11:28:10 - [32minfo[39m: Running SDK with args C:\Program Files\nodejs\node.exe E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\node_modules\browserstack-node-sdk\src\bin\runner.js mocha
+2025-04-16 11:28:10 - [32minfo[39m: Reading configs from E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\browserstack.yml
+2025-04-16 11:28:10 - [32minfo[39m: SDK run started with id: b04817b7-2751-4b84-bec4-c66a5c105cd0
+2025-04-16 11:28:10 - [32minfo[39m: Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+2025-04-16 11:28:15 - [32minfo[39m: Local binary started successfully
+2025-04-16 11:28:56 - [32minfo[39m: Running SDK with args C:\Program Files\nodejs\node.exe E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\node_modules\browserstack-node-sdk\src\bin\runner.js mocha -r ts-node/register tests/**/*.spec.ts
+2025-04-16 11:28:56 - [32minfo[39m: Reading configs from E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\browserstack.yml
+2025-04-16 11:28:56 - [32minfo[39m: SDK run started with id: 215b64ea-a1ea-4d2a-85b6-7ef48549fb3c
+2025-04-16 11:28:56 - [32minfo[39m: Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+2025-04-16 11:28:58 - [32minfo[39m: Local binary started successfully
+2025-04-16 11:28:59 - [32minfo[39m: Running your mocha tests across 3 platforms
+2025-04-16 11:28:59 - [32minfo[39m: Now, showing logs from mocha
+2025-04-16 11:28:59 - [32minfo[39m: Testhub started with id: faxal49hpelmjzfgim1qjv7izpyd82y0eemp3unv
+2025-04-16 11:29:01 - [32minfo[39m: Configuring to run tests on BrowserStack
+2025-04-16 11:29:01 - [32minfo[39m: Configuring to run tests on BrowserStack
+2025-04-16 11:29:01 - [32minfo[39m: Configuring to run tests on BrowserStack
+2025-04-16 11:29:01 - [32minfo[39m: SDK run ended for id: 215b64ea-a1ea-4d2a-85b6-7ef48549fb3c, testhub id: faxal49hpelmjzfgim1qjv7izpyd82y0eemp3unv
+2025-04-16 11:29:02 - [32minfo[39m: Visit https://observability.browserstack.com/builds/faxal49hpelmjzfgim1qjv7izpyd82y0eemp3unv to view build report, insights, and many more debugging information all at one place!
+
+2025-04-16 11:29:02 - [31merror[39m: spawn wmic.exe ENOENT
+2025-04-16 11:29:02 - [31merror[39m: Cannot read properties of undefined (reading 'map')
+2025-04-16 11:31:24 - [32minfo[39m: Creating configuration file...
+2025-04-16 11:31:24 - [32minfo[39m: Adding new script(s) in package.json...
+2025-04-16 11:31:24 - [32minfo[39m: Setup completed
+2025-04-16 11:32:30 - [32minfo[39m: Running SDK with args C:\Program Files\nodejs\node.exe E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\node_modules\browserstack-node-sdk\src\bin\runner.js mocha
+2025-04-16 11:32:30 - [32minfo[39m: Reading configs from E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\browserstack.yml
+2025-04-16 11:32:30 - [32minfo[39m: SDK run started with id: 5a1f7b1b-56e8-439f-9da9-f792a1ca23fe
+2025-04-16 11:35:56 - [32minfo[39m: Creating configuration file...
+2025-04-16 11:35:56 - [32minfo[39m: Setup completed
+2025-04-16 11:37:21 - [32minfo[39m: Running SDK with args C:\Program Files\nodejs\node.exe E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\node_modules\browserstack-node-sdk\src\bin\runner.js mocha
+2025-04-16 11:37:21 - [32minfo[39m: Reading configs from E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\browserstack.yml
+2025-04-16 11:37:21 - [32minfo[39m: SDK run started with id: 90543a53-88ad-4318-bd6f-d5cc6378b788
+2025-04-16 11:37:21 - [32minfo[39m: Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+2025-04-16 11:37:23 - [31merror[39m: Error: LocalError: Disconnected
+    at BrowserStackSetup.setupBrowserstackLocal (E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\node_modules\browserstack-node-sdk\src\helpers\BrowserStackSetup.js:1:17177)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BrowserStackSetup.initialize (E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\node_modules\browserstack-node-sdk\src\helpers\BrowserStackSetup.js:1:14522)
+    at async run (E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\node_modules\browserstack-node-sdk\src\bin\mocha\command.js:2:21896)
+    at async captureError (E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\node_modules\browserstack-node-sdk\src\bin\runner.js:2:1757)
+2025-04-16 11:39:51 - [32minfo[39m: Running SDK with args C:\Program Files\nodejs\node.exe E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\node_modules\browserstack-node-sdk\src\bin\runner.js mocha
+2025-04-16 11:39:51 - [32minfo[39m: Reading configs from E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\browserstack.yml
+2025-04-16 11:39:51 - [32minfo[39m: SDK run started with id: 9173f0c3-5e57-4870-a74f-c2bedfd770de
+2025-04-16 11:39:51 - [32minfo[39m: Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+2025-04-16 11:39:53 - [32minfo[39m: Local binary started successfully
+2025-04-16 11:41:15 - [32minfo[39m: Running SDK with args C:\Program Files\nodejs\node.exe E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\node_modules\browserstack-node-sdk\src\bin\runner.js mocha -r ts-node/register 'src/**/*.test.ts'
+2025-04-16 11:41:15 - [32minfo[39m: Reading configs from E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\browserstack.yml
+2025-04-16 11:41:15 - [32minfo[39m: SDK run started with id: e9ebac9d-b5af-4d8c-8e0f-a06cdd2cfed6
+2025-04-16 11:41:15 - [32minfo[39m: Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+2025-04-16 11:41:18 - [32minfo[39m: Local binary started successfully
+2025-04-16 11:41:50 - [32minfo[39m: Running SDK with args C:\Program Files\nodejs\node.exe E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\node_modules\browserstack-node-sdk\src\bin\runner.js mocha -r ts-node/register 'src/tests/*.spec.ts'
+2025-04-16 11:41:50 - [32minfo[39m: Reading configs from E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\browserstack.yml
+2025-04-16 11:41:50 - [32minfo[39m: SDK run started with id: 39ebdda3-06b7-4d48-989c-1eb1d572b454
+2025-04-16 11:41:50 - [32minfo[39m: Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+2025-04-16 11:41:52 - [32minfo[39m: Local binary started successfully
+2025-04-16 11:43:21 - [32minfo[39m: Running SDK with args C:\Program Files\nodejs\node.exe E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\node_modules\browserstack-node-sdk\src\bin\runner.js mocha -r ts-node/register 'tests/specs/**/*.spec.ts'
+2025-04-16 11:43:21 - [32minfo[39m: Reading configs from E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\browserstack.yml
+2025-04-16 11:43:21 - [32minfo[39m: SDK run started with id: b18f8259-fdec-46f2-9e5d-a27e1fab8f8b
+2025-04-16 11:43:21 - [32minfo[39m: Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+2025-04-16 11:43:23 - [32minfo[39m: Local binary started successfully
+2025-04-16 11:44:19 - [32minfo[39m: Running SDK with args C:\Program Files\nodejs\node.exe E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\node_modules\browserstack-node-sdk\src\bin\runner.js mocha --loader ts-node/esm 'tests/specs/**/*.spec.ts'
+2025-04-16 11:44:19 - [32minfo[39m: Reading configs from E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\browserstack.yml
+2025-04-16 11:44:19 - [32minfo[39m: SDK run started with id: 9e2a6cbf-82fa-49f0-a5c3-95d816db1b71
+2025-04-16 11:44:19 - [32minfo[39m: Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+2025-04-16 11:44:21 - [32minfo[39m: Local binary started successfully
+2025-04-16 11:45:20 - [32minfo[39m: Running SDK with args C:\Program Files\nodejs\node.exe E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\node_modules\browserstack-node-sdk\src\bin\runner.js mocha --loader ts-node/esm 'tests/specs/**/*.spec.ts'
+2025-04-16 11:45:20 - [32minfo[39m: Reading configs from E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\browserstack.yml
+2025-04-16 11:45:20 - [32minfo[39m: SDK run started with id: 44428cf9-726a-474e-a23e-3a8844cdae80
+2025-04-16 11:45:20 - [32minfo[39m: Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+2025-04-16 11:45:22 - [32minfo[39m: Local binary started successfully
+2025-04-16 11:45:46 - [32minfo[39m: Running SDK with args C:\Program Files\nodejs\node.exe E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\node_modules\browserstack-node-sdk\src\bin\runner.js mocha
+2025-04-16 11:45:46 - [32minfo[39m: Reading configs from E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\browserstack.yml
+2025-04-16 11:45:46 - [32minfo[39m: SDK run started with id: 65e00563-f04f-49b0-bc2c-fdfca222b0b8
+2025-04-16 11:45:46 - [32minfo[39m: Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+2025-04-16 11:45:48 - [32minfo[39m: Local binary started successfully
+2025-04-16 11:47:01 - [32minfo[39m: Creating configuration file...
+2025-04-16 11:47:01 - [32minfo[39m: Adding new script(s) in package.json...
+2025-04-16 11:47:01 - [32minfo[39m: Setup completed
+2025-04-16 11:47:27 - [32minfo[39m: Running SDK with args C:\Program Files\nodejs\node.exe E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\node_modules\browserstack-node-sdk\src\bin\runner.js mocha
+2025-04-16 11:47:27 - [32minfo[39m: Reading configs from E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\browserstack.yml
+2025-04-16 11:47:27 - [32minfo[39m: SDK run started with id: 49cc2395-7c47-4747-be18-4f8e8ede0a4b
+2025-04-16 11:47:27 - [32minfo[39m: Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+2025-04-16 11:47:30 - [32minfo[39m: Local binary started successfully
+2025-04-16 11:50:21 - [32minfo[39m: Running SDK with args C:\Program Files\nodejs\node.exe E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\node_modules\browserstack-node-sdk\src\bin\runner.js mocha
+2025-04-16 11:50:21 - [32minfo[39m: Reading configs from E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\browserstack.yml
+2025-04-16 11:50:21 - [32minfo[39m: SDK run started with id: b094e950-0429-4290-b533-6b87075bb017
+2025-04-16 11:50:22 - [32minfo[39m: Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+2025-04-16 11:50:24 - [32minfo[39m: Local binary started successfully
+2025-04-16 11:54:29 - [32minfo[39m: Running SDK with args C:\Program Files\nodejs\node.exe E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\node_modules\browserstack-node-sdk\src\bin\runner.js mocha test/**/*.spec.ts
+2025-04-16 11:54:29 - [32minfo[39m: Reading configs from E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\browserstack.yml
+2025-04-16 11:54:29 - [32minfo[39m: SDK run started with id: a545348c-ae9d-4a0c-b14a-cdd62f976aff
+2025-04-16 11:54:29 - [32minfo[39m: Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+2025-04-16 11:54:31 - [32minfo[39m: Local binary started successfully
+2025-04-16 11:54:32 - [32minfo[39m: Running your mocha tests across 3 platforms
+2025-04-16 11:54:32 - [32minfo[39m: Now, showing logs from mocha
+2025-04-16 11:54:32 - [32minfo[39m: Testhub started with id: pi2z6m6a3aivbagm2vthvbkvrrndtfpvzs1u6ncc
+2025-04-16 11:54:34 - [32minfo[39m: Configuring to run tests on BrowserStack
+2025-04-16 11:54:34 - [32minfo[39m: Configuring to run tests on BrowserStack
+2025-04-16 11:54:34 - [32minfo[39m: Configuring to run tests on BrowserStack
+2025-04-16 11:54:34 - [32minfo[39m: SDK run ended for id: a545348c-ae9d-4a0c-b14a-cdd62f976aff, testhub id: pi2z6m6a3aivbagm2vthvbkvrrndtfpvzs1u6ncc
+2025-04-16 11:54:35 - [32minfo[39m: Visit https://observability.browserstack.com/builds/pi2z6m6a3aivbagm2vthvbkvrrndtfpvzs1u6ncc to view build report, insights, and many more debugging information all at one place!
+
+2025-04-16 11:54:35 - [31merror[39m: spawn wmic.exe ENOENT
+2025-04-16 11:54:35 - [31merror[39m: Cannot read properties of undefined (reading 'map')
+2025-04-16 11:54:45 - [32minfo[39m: Running SDK with args C:\Program Files\nodejs\node.exe E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\node_modules\browserstack-node-sdk\src\bin\runner.js mocha
+2025-04-16 11:54:45 - [32minfo[39m: Reading configs from E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\browserstack.yml
+2025-04-16 11:54:45 - [32minfo[39m: SDK run started with id: 5d6be702-69af-4164-8493-4ed7a9ba8640
+2025-04-16 11:54:45 - [32minfo[39m: Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+2025-04-16 11:54:48 - [32minfo[39m: Local binary started successfully
+2025-04-16 11:55:08 - [32minfo[39m: Running SDK with args C:\Program Files\nodejs\node.exe E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\node_modules\browserstack-node-sdk\src\bin\runner.js mocha test/**/*.spec.ts
+2025-04-16 11:55:08 - [32minfo[39m: Reading configs from E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\browserstack.yml
+2025-04-16 11:55:08 - [32minfo[39m: SDK run started with id: bfb0ee28-1dd7-4f82-a735-ebb9db5680bb
+2025-04-16 11:55:08 - [32minfo[39m: Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+2025-04-16 11:55:10 - [32minfo[39m: Local binary started successfully
+2025-04-16 11:55:11 - [32minfo[39m: Running your mocha tests across 3 platforms
+2025-04-16 11:55:11 - [32minfo[39m: Now, showing logs from mocha
+2025-04-16 11:55:11 - [32minfo[39m: Testhub started with id: c8hshahoyzg7twhbtmo2lu421rfoua968tmlthfr
+2025-04-16 11:55:13 - [32minfo[39m: Configuring to run tests on BrowserStack
+2025-04-16 11:55:13 - [32minfo[39m: Configuring to run tests on BrowserStack
+2025-04-16 11:55:13 - [32minfo[39m: Configuring to run tests on BrowserStack
+2025-04-16 11:55:13 - [32minfo[39m: SDK run ended for id: bfb0ee28-1dd7-4f82-a735-ebb9db5680bb, testhub id: c8hshahoyzg7twhbtmo2lu421rfoua968tmlthfr
+2025-04-16 11:55:13 - [32minfo[39m: Visit https://observability.browserstack.com/builds/c8hshahoyzg7twhbtmo2lu421rfoua968tmlthfr to view build report, insights, and many more debugging information all at one place!
+
+2025-04-16 11:55:13 - [31merror[39m: spawn wmic.exe ENOENT
+2025-04-16 11:55:13 - [31merror[39m: Cannot read properties of undefined (reading 'map')
+2025-04-16 11:58:55 - [32minfo[39m: Running SDK with args C:\Program Files\nodejs\node.exe E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\node_modules\browserstack-node-sdk\src\bin\runner.js mocha test/specs/**/*.spec.ts --require tsx
+2025-04-16 11:58:55 - [32minfo[39m: Reading configs from E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\browserstack.yml
+2025-04-16 11:58:55 - [32minfo[39m: SDK run started with id: d82c2f5e-6798-4490-a3c7-d24023f7e418
+2025-04-16 11:58:55 - [32minfo[39m: Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+2025-04-16 11:58:57 - [32minfo[39m: Local binary started successfully
+2025-04-16 11:58:59 - [32minfo[39m: Running your mocha tests across 3 platforms
+2025-04-16 11:58:59 - [32minfo[39m: Now, showing logs from mocha
+2025-04-16 11:58:59 - [32minfo[39m: Testhub started with id: ufjxowtahqn6ovhhkzd0gnba0oq4qbgi9pqbjcc1
+2025-04-16 11:59:01 - [32minfo[39m: Configuring to run tests on BrowserStack
+2025-04-16 11:59:01 - [32minfo[39m: Configuring to run tests on BrowserStack
+2025-04-16 11:59:01 - [32minfo[39m: Configuring to run tests on BrowserStack
+2025-04-16 11:59:05 - [32minfo[39m: SDK run ended for id: d82c2f5e-6798-4490-a3c7-d24023f7e418, testhub id: ufjxowtahqn6ovhhkzd0gnba0oq4qbgi9pqbjcc1
+2025-04-16 11:59:05 - [32minfo[39m: Visit https://observability.browserstack.com/builds/ufjxowtahqn6ovhhkzd0gnba0oq4qbgi9pqbjcc1 to view build report, insights, and many more debugging information all at one place!
+
+2025-04-16 11:59:05 - [31merror[39m: spawn wmic.exe ENOENT
+2025-04-16 11:59:05 - [31merror[39m: Cannot read properties of undefined (reading 'map')
+2025-04-16 12:09:57 - [32minfo[39m: Running SDK with args C:\Program Files\nodejs\node.exe E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\node_modules\browserstack-node-sdk\src\bin\runner.js mocha test/specs/**/*.spec.ts --require tsx
+2025-04-16 12:09:57 - [32minfo[39m: Reading configs from E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\browserstack.yml
+2025-04-16 12:09:57 - [32minfo[39m: SDK run started with id: a84632cc-dbab-43a8-bc0b-2d822687a28c
+2025-04-16 12:09:57 - [32minfo[39m: Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+2025-04-16 12:09:58 - [32minfo[39m: Running your mocha tests across 3 platforms
+2025-04-16 12:09:58 - [32minfo[39m: Now, showing logs from mocha
+2025-04-16 12:09:58 - [32minfo[39m: Testhub started with id: tesurojaibdprjiwmzqf9t2adksomvccqrzrfvad
+2025-04-16 12:10:00 - [32minfo[39m: Configuring to run tests on BrowserStack
+2025-04-16 12:10:00 - [32minfo[39m: Configuring to run tests on BrowserStack
+2025-04-16 12:10:00 - [32minfo[39m: Configuring to run tests on BrowserStack
+2025-04-16 12:10:04 - [33mwarn[39m: Unable to show build URL, as build capability is not used
+2025-04-16 12:10:04 - [32minfo[39m: SDK run ended for id: a84632cc-dbab-43a8-bc0b-2d822687a28c, testhub id: tesurojaibdprjiwmzqf9t2adksomvccqrzrfvad
+2025-04-16 12:10:05 - [32minfo[39m: Visit https://observability.browserstack.com/builds/tesurojaibdprjiwmzqf9t2adksomvccqrzrfvad to view build report, insights, and many more debugging information all at one place!
+
+2025-04-16 12:10:39 - [32minfo[39m: Running SDK with args C:\Program Files\nodejs\node.exe E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\node_modules\browserstack-node-sdk\src\bin\runner.js mocha test/specs/**/*.spec.ts --require tsx
+2025-04-16 12:10:39 - [32minfo[39m: Reading configs from E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\browserstack.yml
+2025-04-16 12:10:39 - [32minfo[39m: SDK run started with id: abb80712-446b-4503-9d1d-83bf4c161285
+2025-04-16 12:10:39 - [32minfo[39m: Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+2025-04-16 12:10:40 - [32minfo[39m: Running your mocha tests across 3 platforms
+2025-04-16 12:10:40 - [32minfo[39m: Now, showing logs from mocha
+2025-04-16 12:10:40 - [32minfo[39m: Testhub started with id: qhg7w4gjidorwhuhthkutmm7i8mllkqrgpqvyy0n
+2025-04-16 12:10:42 - [32minfo[39m: Configuring to run tests on BrowserStack
+2025-04-16 12:10:42 - [32minfo[39m: Configuring to run tests on BrowserStack
+2025-04-16 12:10:42 - [32minfo[39m: Configuring to run tests on BrowserStack
+2025-04-16 12:10:46 - [33mwarn[39m: Unable to show build URL, as build capability is not used
+2025-04-16 12:10:46 - [32minfo[39m: SDK run ended for id: abb80712-446b-4503-9d1d-83bf4c161285, testhub id: qhg7w4gjidorwhuhthkutmm7i8mllkqrgpqvyy0n
+2025-04-16 12:10:46 - [32minfo[39m: Visit https://observability.browserstack.com/builds/qhg7w4gjidorwhuhthkutmm7i8mllkqrgpqvyy0n to view build report, insights, and many more debugging information all at one place!
+
+2025-04-16 12:10:56 - [32minfo[39m: Running SDK with args C:\Program Files\nodejs\node.exe E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\node_modules\browserstack-node-sdk\src\bin\runner.js mocha test/specs/**/*.spec.ts --require tsx
+2025-04-16 12:10:56 - [32minfo[39m: Reading configs from E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\browserstack.yml
+2025-04-16 12:10:56 - [32minfo[39m: SDK run started with id: 55628165-14d1-4836-abba-ed52d7c0040c
+2025-04-16 12:10:56 - [32minfo[39m: Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+2025-04-16 12:10:57 - [32minfo[39m: Running your mocha tests across 3 platforms
+2025-04-16 12:10:57 - [32minfo[39m: Now, showing logs from mocha
+2025-04-16 12:10:57 - [32minfo[39m: Testhub started with id: 0tzncavel5nvqd9rk8jyhagupx7jvurm4wvyjg9p
+2025-04-16 12:10:59 - [32minfo[39m: Configuring to run tests on BrowserStack
+2025-04-16 12:10:59 - [32minfo[39m: Configuring to run tests on BrowserStack
+2025-04-16 12:10:59 - [32minfo[39m: Configuring to run tests on BrowserStack
+2025-04-16 12:11:43 - [33mwarn[39m: Unable to show build URL, as build capability is not used
+2025-04-16 12:11:43 - [32minfo[39m: SDK run ended for id: 55628165-14d1-4836-abba-ed52d7c0040c, testhub id: 0tzncavel5nvqd9rk8jyhagupx7jvurm4wvyjg9p
+2025-04-16 12:11:44 - [32minfo[39m: Visit https://observability.browserstack.com/builds/0tzncavel5nvqd9rk8jyhagupx7jvurm4wvyjg9p to view build report, insights, and many more debugging information all at one place!
+
+2025-04-16 12:12:38 - [32minfo[39m: Running SDK with args C:\Program Files\nodejs\node.exe E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\node_modules\browserstack-node-sdk\src\bin\runner.js mocha test/specs/**/*.spec.ts --require tsx
+2025-04-16 12:12:38 - [32minfo[39m: Reading configs from E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\browserstack.yml
+2025-04-16 12:12:38 - [32minfo[39m: SDK run started with id: d6eb25b8-427e-4ef2-9b6f-97815166916e
+2025-04-16 12:12:38 - [32minfo[39m: Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+2025-04-16 12:12:40 - [32minfo[39m: Local binary started successfully
+2025-04-16 12:12:41 - [32minfo[39m: Running your mocha tests across 3 platforms
+2025-04-16 12:12:41 - [32minfo[39m: Now, showing logs from mocha
+2025-04-16 12:12:41 - [32minfo[39m: Testhub started with id: bkr7ewumhvswa8iadpotellpne2irf2bxb1rwqzu
+2025-04-16 12:12:44 - [32minfo[39m: Configuring to run tests on BrowserStack
+2025-04-16 12:12:44 - [32minfo[39m: Configuring to run tests on BrowserStack
+2025-04-16 12:12:44 - [32minfo[39m: Configuring to run tests on BrowserStack
+2025-04-16 12:14:35 - [32minfo[39m: View build on BrowserStack dashboard: https://automate.browserstack.com/dashboard/v2/builds/56cc444ccf89a572611d8b449d90d9b6194d3073
+2025-04-16 12:14:36 - [32minfo[39m: SDK run ended for id: d6eb25b8-427e-4ef2-9b6f-97815166916e, testhub id: bkr7ewumhvswa8iadpotellpne2irf2bxb1rwqzu
+2025-04-16 12:14:36 - [32minfo[39m: Visit https://observability.browserstack.com/builds/bkr7ewumhvswa8iadpotellpne2irf2bxb1rwqzu to view build report, insights, and many more debugging information all at one place!
+
+2025-04-16 12:14:36 - [31merror[39m: spawn wmic.exe ENOENT
+2025-04-16 12:14:36 - [31merror[39m: Cannot read properties of undefined (reading 'map')
+2025-04-16 12:15:53 - [32minfo[39m: Running SDK with args C:\Program Files\nodejs\node.exe E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\node_modules\browserstack-node-sdk\src\bin\runner.js mocha test/specs/**/*.spec.ts --require tsx
+2025-04-16 12:15:53 - [32minfo[39m: Reading configs from E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\browserstack.yml
+2025-04-16 12:15:53 - [32minfo[39m: SDK run started with id: 51a126ea-f875-40cb-84d2-53fcdf606026
+2025-04-16 12:15:53 - [32minfo[39m: Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+2025-04-16 12:15:56 - [32minfo[39m: Local binary started successfully
+2025-04-16 12:15:57 - [32minfo[39m: Running your mocha tests across 1 platforms
+2025-04-16 12:15:57 - [32minfo[39m: Now, showing logs from mocha
+2025-04-16 12:15:57 - [32minfo[39m: Testhub started with id: vzq0kbq4kt1bzmudosqmkaxr7uxuncrj4zy21tw7
+2025-04-16 12:15:59 - [32minfo[39m: Configuring to run tests on BrowserStack
+2025-04-16 12:16:25 - [32minfo[39m: View build on BrowserStack dashboard: https://automate.browserstack.com/dashboard/v2/builds/353a341ea5bd2df60c5459a6db6b496a9e5ee5f1
+2025-04-16 12:16:25 - [32minfo[39m: SDK run ended for id: 51a126ea-f875-40cb-84d2-53fcdf606026, testhub id: vzq0kbq4kt1bzmudosqmkaxr7uxuncrj4zy21tw7
+2025-04-16 12:16:25 - [32minfo[39m: Visit https://observability.browserstack.com/builds/vzq0kbq4kt1bzmudosqmkaxr7uxuncrj4zy21tw7 to view build report, insights, and many more debugging information all at one place!
+
+2025-04-16 12:16:25 - [31merror[39m: spawn wmic.exe ENOENT
+2025-04-16 12:16:25 - [31merror[39m: Cannot read properties of undefined (reading 'map')
+2025-04-16 12:18:02 - [32minfo[39m: Running SDK with args C:\Program Files\nodejs\node.exe E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\node_modules\browserstack-node-sdk\src\bin\runner.js mocha test/specs/**/*.spec.ts --require tsx
+2025-04-16 12:18:02 - [32minfo[39m: Reading configs from E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\browserstack.yml
+2025-04-16 12:18:02 - [32minfo[39m: SDK run started with id: d1a5f5f2-0bf9-408d-8c1f-46ae3dbf6f98
+2025-04-16 12:18:02 - [32minfo[39m: Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+2025-04-16 12:18:05 - [32minfo[39m: Local binary started successfully
+2025-04-16 12:21:46 - [32minfo[39m: Running SDK with args C:\Program Files\nodejs\node.exe E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\node_modules\browserstack-node-sdk\src\bin\runner.js mocha test/specs/**/*.spec.ts --require tsx
+2025-04-16 12:21:46 - [32minfo[39m: Reading configs from E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\browserstack.yml
+2025-04-16 12:21:46 - [32minfo[39m: SDK run started with id: 3a018953-bcf9-4ee4-9114-0e34d651f6c7
+2025-04-16 12:21:46 - [32minfo[39m: Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+2025-04-16 12:21:48 - [32minfo[39m: Local binary started successfully
+2025-04-16 12:21:49 - [32minfo[39m: Running your mocha tests across 1 platforms
+2025-04-16 12:21:49 - [32minfo[39m: Now, showing logs from mocha
+2025-04-16 12:21:49 - [32minfo[39m: Testhub started with id: nd7c1hgmcy7kulmw67qqwfywjnwbb2cvyfqd2yzf
+2025-04-16 12:21:51 - [32minfo[39m: Configuring to run tests on BrowserStack
+2025-04-16 12:22:05 - [32minfo[39m: View build on BrowserStack dashboard: https://automate.browserstack.com/dashboard/v2/builds/62d739edfcd392e58c1b0bbc6680efa11cfc8e34
+2025-04-16 12:22:05 - [32minfo[39m: SDK run ended for id: 3a018953-bcf9-4ee4-9114-0e34d651f6c7, testhub id: nd7c1hgmcy7kulmw67qqwfywjnwbb2cvyfqd2yzf
+2025-04-16 12:22:05 - [32minfo[39m: Visit https://observability.browserstack.com/builds/nd7c1hgmcy7kulmw67qqwfywjnwbb2cvyfqd2yzf to view build report, insights, and many more debugging information all at one place!
+
+2025-04-16 12:22:05 - [31merror[39m: spawn wmic.exe ENOENT
+2025-04-16 12:22:05 - [31merror[39m: Cannot read properties of undefined (reading 'map')
+2025-04-16 12:22:31 - [32minfo[39m: Running SDK with args C:\Program Files\nodejs\node.exe E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\node_modules\browserstack-node-sdk\src\bin\runner.js mocha test/specs/**/*.spec.ts --require tsx
+2025-04-16 12:22:31 - [32minfo[39m: Reading configs from E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\browserstack.yml
+2025-04-16 12:22:31 - [32minfo[39m: SDK run started with id: 87294da0-6a6e-4a70-a24a-5dd349ea7c3d
+2025-04-16 12:22:31 - [32minfo[39m: Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+2025-04-16 12:22:33 - [32minfo[39m: Local binary started successfully
+2025-04-16 12:22:34 - [32minfo[39m: Running your mocha tests across 1 platforms
+2025-04-16 12:22:34 - [32minfo[39m: Now, showing logs from mocha
+2025-04-16 12:22:34 - [32minfo[39m: Testhub started with id: odnzc45dn8jwsishcg7zqxkfmbb99wwsudkxdyqx
+2025-04-16 12:22:36 - [32minfo[39m: Configuring to run tests on BrowserStack
+2025-04-16 12:23:00 - [32minfo[39m: View build on BrowserStack dashboard: https://automate.browserstack.com/dashboard/v2/builds/5bc7f6ae923665677f7c235aa6bf47828821dcd7
+2025-04-16 12:23:00 - [32minfo[39m: SDK run ended for id: 87294da0-6a6e-4a70-a24a-5dd349ea7c3d, testhub id: odnzc45dn8jwsishcg7zqxkfmbb99wwsudkxdyqx
+2025-04-16 12:23:00 - [32minfo[39m: Visit https://observability.browserstack.com/builds/odnzc45dn8jwsishcg7zqxkfmbb99wwsudkxdyqx to view build report, insights, and many more debugging information all at one place!
+
+2025-04-16 12:23:00 - [31merror[39m: spawn wmic.exe ENOENT
+2025-04-16 12:23:00 - [31merror[39m: Cannot read properties of undefined (reading 'map')
+2025-04-16 12:23:17 - [32minfo[39m: Running SDK with args C:\Program Files\nodejs\node.exe E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\node_modules\browserstack-node-sdk\src\bin\runner.js mocha test/specs/**/*.spec.ts --require tsx
+2025-04-16 12:23:17 - [32minfo[39m: Reading configs from E:\My space\Git\qa_auto_typescript_r_d\home_works\home_work_17\selenium-webdriver\browserstack.yml
+2025-04-16 12:23:17 - [32minfo[39m: SDK run started with id: 0daaf4b5-1db4-48e4-99dd-f2cd3611ce36
+2025-04-16 12:23:17 - [32minfo[39m: Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+2025-04-16 12:23:20 - [32minfo[39m: Local binary started successfully
+2025-04-16 12:23:21 - [32minfo[39m: Running your mocha tests across 1 platforms
+2025-04-16 12:23:21 - [32minfo[39m: Now, showing logs from mocha
+2025-04-16 12:23:21 - [32minfo[39m: Testhub started with id: 2vjeiiwe3wba5tkapoeyirswmnc9nbzxxhssedyu
+2025-04-16 12:23:23 - [32minfo[39m: Configuring to run tests on BrowserStack
+2025-04-16 12:23:27 - [32minfo[39m: SDK run ended for id: 0daaf4b5-1db4-48e4-99dd-f2cd3611ce36, testhub id: 2vjeiiwe3wba5tkapoeyirswmnc9nbzxxhssedyu
+2025-04-16 12:23:27 - [32minfo[39m: Visit https://observability.browserstack.com/builds/2vjeiiwe3wba5tkapoeyirswmnc9nbzxxhssedyu to view build report, insights, and many more debugging information all at one place!
+
+2025-04-16 12:23:27 - [31merror[39m: spawn wmic.exe ENOENT
+2025-04-16 12:23:27 - [31merror[39m: Cannot read properties of undefined (reading 'map')
